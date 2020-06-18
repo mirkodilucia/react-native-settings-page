@@ -1,6 +1,6 @@
 {
-  "name": "react-native-settings-page",
-  "version": "2.0.6",
+  "name": "react-native-preference-screens",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "keywords": [
     "react-native"
   ],
-  "author": "Gabriel Mazurco Ribeiro",
+  "author": "Mirko Di Lucia",
   "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2"
@@ -17,6 +17,6 @@
   "dependencies": {
     "react": "^16.7.0",
     "react-native-elements": "^1.0.0",
-    "react-native-vector-icons": "^6.2.0"
+    "react-native-vector-icons": "^6.6.0"
   }
 }

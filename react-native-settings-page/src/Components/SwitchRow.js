@@ -21,7 +21,7 @@ class SwitchRow extends Component {
                 <View style={containerInSection}>
                     <View style={containerInnerSection}>
                         {
-                            iconLeft
+                            this.props.iconLeft
                         }
                         <Text style={text} numberOfLines={1} ellipsizeMode={'tail'}>
                             {this.props.text}

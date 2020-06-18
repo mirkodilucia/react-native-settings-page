@@ -11,7 +11,6 @@ const {
     containerInSection,
     containerInnerSection,
     checkSt,
-    icon,
     text,
 } = SettingsRowStyle
 
@@ -22,7 +21,7 @@ class CheckRow extends Component {
             <TouchableOpacity onPress={this.props.onPressCallback}>
                 <View style={containerInSection}>
                     <View style={containerInnerSection}>
-                        { (icon) && icon }
+                        { (this.props.icon) && this.props.icon }
                         <Text style={text} numberOfLines={1} ellipsizeMode={'tail'}>
                             {this.props.text}
                         </Text>

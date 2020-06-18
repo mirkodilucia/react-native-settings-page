@@ -21,13 +21,13 @@ class NavigateRow extends Component {
                 <View style={containerInSection}>
                     <View style={containerInnerSection}>
                         {
-                            (iconLeft) && iconLeft
+                            (this.props.iconLeft) && this.props.iconLeft
                         }
                         <Text style={text} numberOfLines={1} ellipsizeMode={'tail'}>
                             {this.props.text}
                         </Text>
                         {
-                            (iconRight) && iconRight
+                            (this.props.iconRight) && this.props.iconRight
                         }
                     </View>
                 </View>
