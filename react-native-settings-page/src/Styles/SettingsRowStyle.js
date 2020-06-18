@@ -58,6 +58,7 @@ const SettingsRowStyle = StyleSheet.create({
     },
     iconLeft: {
         flex: 1,
+        marginLeft : 16,
         textAlign: 'center'
     },
     switchSt: {
