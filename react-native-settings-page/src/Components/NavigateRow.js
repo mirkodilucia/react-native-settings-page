@@ -1,7 +1,7 @@
 // Dependencies import
 import React, { Component } from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
-import Icon from 'react-native-vector-icons/FontAwesome'
+
 import SettingsRowStyle from '../Styles/SettingsRowStyle'
 
 // Styles deconstructing
@@ -20,11 +20,15 @@ class NavigateRow extends Component {
             <TouchableOpacity onPress={this.props.onPressCallback}>
                 <View style={containerInSection}>
                     <View style={containerInnerSection}>
-                        <Icon name={this.props.iconName} size={24} style={iconLeft} />
+                        {
+                            (iconLeft) && iconLeft
+                        }
                         <Text style={text} numberOfLines={1} ellipsizeMode={'tail'}>
                             {this.props.text}
                         </Text>
-                        <Icon name={'angle-right'} size={24} style={iconRight} />
+                        {
+                            (iconRight) && iconRight
+                        }
                     </View>
                 </View>
             </TouchableOpacity>

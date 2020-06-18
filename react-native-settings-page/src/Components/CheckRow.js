@@ -1,8 +1,9 @@
 // Dependencies import
 import React, { Component } from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
+
 import { CheckBox } from 'react-native-elements'
-import Icon from 'react-native-vector-icons/FontAwesome'
+
 import SettingsRowStyle from '../Styles/SettingsRowStyle'
 
 // Styles deconstructing
@@ -10,7 +11,7 @@ const {
     containerInSection,
     containerInnerSection,
     checkSt,
-    iconLeft,
+    icon,
     text,
 } = SettingsRowStyle
 
@@ -21,7 +22,7 @@ class CheckRow extends Component {
             <TouchableOpacity onPress={this.props.onPressCallback}>
                 <View style={containerInSection}>
                     <View style={containerInnerSection}>
-                        <Icon name={this.props.iconName} size={24} style={iconLeft} />
+                        { (icon) && icon }
                         <Text style={text} numberOfLines={1} ellipsizeMode={'tail'}>
                             {this.props.text}
                         </Text>
